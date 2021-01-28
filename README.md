@@ -7,7 +7,9 @@ Les fonctionnalités que doit à minima avoir l'app
 - pouvoir modifier information
 
 - Identification Données biométriques / mot de passe
-- Affichage des données de comptes
+- Affichage des données de l'API doivent apparaître dans l'application
+
+
 
 ## Gestion des données en locales
 
