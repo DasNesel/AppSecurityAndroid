@@ -1,3 +1,8 @@
+/*
+*   Projet d'application dev secu
+*   Maxence CHOPINEAU, Pierre NICLAS, Matthieu LICETTE
+*
+*/
 package com.example.secu_app;
 
 import android.os.Bundle;
