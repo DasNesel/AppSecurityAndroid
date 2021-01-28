@@ -26,3 +26,15 @@ Il faut faire un échange avec l'API de façon sécurisé et que toute la partie
 - Cacher URL de l'api
 - Echange avec une API en TLS
 
+
+
+## notes
+
+Faire des classes avec tous ce dont l'on a besoin dans la BDD
+
+
+
+Dans java src -> new package -> .models 
+
+On créer les items de la bdd dans le models
+
