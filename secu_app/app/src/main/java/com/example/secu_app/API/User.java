@@ -5,6 +5,7 @@ public class User {
     private int id;
     private String name;
     private String lastname;
+    private String utilisateur;
     private int password;
 
     public User() {
@@ -22,6 +23,10 @@ public class User {
 
     public String getLastname(){
         return lastname;
+    }
+
+    public String getUtilisateur() {
+        return utilisateur;
     }
 
     //SETTERS
