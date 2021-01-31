@@ -28,7 +28,7 @@ Il faut faire un échange avec l'API de façon sécurisé et que toute la partie
 
 
 
-## notes
+## Notes
 
 Faire des classes avec tous ce dont l'on a besoin dans la BDD
 
