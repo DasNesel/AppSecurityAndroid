@@ -3,13 +3,14 @@ package com.example.secu_app.API;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import android.content.Context ;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-
 public class getJSON {
 
     public static Retrofit retrofit;
@@ -26,15 +27,15 @@ public class getJSON {
         return retrofit;
     }
     //public GetEvents create(Class<GetEvents> retrofitInterfaceClass) { return null; }
-/*
+
     private void setBaseUrl(){
         if (fileName != null) {
             try {
                 //open the file and retrieve the inputStream
-                InputStream inputStream = openFileInput(fileName);
-                if (inputStream != null) {
+                InputStream inputstream = new FileInputStream(fileName);
+                if (inputstream != null) {
                     // open a reader on the inputStream
-                    BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(inputstream));
 
                     // String to use to store read lines
                     String str;
@@ -47,16 +48,16 @@ public class getJSON {
                     // Close the reader
                     reader.close();
                     // Close the inputStream
-                    inputStream.close();
+                    inputstream.close();
                     // Affect the text to the textView
                     textViewFile.setText(buf.toString());
                 }
             } catch (java.io.FileNotFoundException e) {
-                Toast.makeText(this, "FileNotFoundException", Toast.LENGTH_LONG);
+                Context Url = setBaseUrl();
+                Toast.makeText(Url , "FileNotFoundException", Toast.LENGTH_LONG).show();
             } catch (IOException e) {
-                Toast.makeText(this, "FileNotFoundException", Toast.LENGTH_LONG);
+                Toast.makeText(this , "FileNotFoundException", Toast.LENGTH_LONG).show();
             }
         }
     }
-*/
 }

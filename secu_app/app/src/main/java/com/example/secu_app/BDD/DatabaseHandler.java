@@ -10,7 +10,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public static final String USER_NAME = "Prénom de l'utilisateur";
     public static final String USER_LASTNAME = "Nom de l'utilisateur";
     public static final String IBAN = "IBAN";
-    public static final float AMOUNT = "montant";
+    public static final String AMOUNT = "montant";
     public static final String CURRENCY = "devise";
 
     public static final String BANKACCONT = "Compte bancaire";
