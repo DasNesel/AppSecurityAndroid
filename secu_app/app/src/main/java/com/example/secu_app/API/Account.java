@@ -13,6 +13,7 @@ public class Account {
         return id;
     }
 
+    //GETTER
     public int getAmount(){
         return amount;
     }
