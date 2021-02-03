@@ -13,9 +13,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public static final float AMOUNT = "montant";
     public static final String CURRENCY = "devise";
 
-    public static final String BANKACCONT = "Compte bancaire";
-    public static final String BANKACCONT_TABLE_CREATE =
-            "CREATE TABLE " + BANKACCONT + " (" +
+    public static final String BANKACCOUNT = "Compte bancaire";
+    public static final String BANKACCOUNT_TABLE_CREATE =
+            "CREATE TABLE " + BANKACCOUNT + " (" +
                     ACCOUNT_KEY + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                     ACCOUNT_NAME + " TEXT, " +
                     USER_NAME + " TEXT, " +
@@ -24,7 +24,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                     AMOUNT + " REAL, " +
                     CURRENCY + " TEXT" +
         ");";
-    private static final String METIER_TABLE_DROP = "DROP TABLE IF EXISTS " + BANKACCONT + ";";
+    private static final String BANKACCOUNT_TABLE_DROP = "DROP TABLE IF EXISTS " + BANKACCOUNT + ";";
 
     public DatabaseHandler(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
@@ -32,12 +32,12 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(BANKACCONT_TABLE_CREATE);
+        db.execSQL(BANKACCOUNT_TABLE_CREATE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL(METIER_TABLE_DROP);
+        db.execSQL(BANKACCOUNT_TABLE_DROP);
         onCreate(db);
     }
 }
