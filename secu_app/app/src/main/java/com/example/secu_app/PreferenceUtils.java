@@ -2,7 +2,7 @@ package com.example.secu_app;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.example.secu_app.API.Account;
+import com.example.secu_app.models.Account;
 
 public class PreferenceUtils {
 

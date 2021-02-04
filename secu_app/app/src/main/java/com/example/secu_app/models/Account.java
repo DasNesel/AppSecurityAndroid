@@ -3,7 +3,7 @@ package com.example.secu_app.API;
 public class Account {
 
     private int id;
-    private String account_name;
+    private String accountName;
     private int amount;
     private String iban;
     private String currency;
@@ -18,8 +18,8 @@ public class Account {
         return amount;
     }
 
-    public String getAccount_name(){
-        return account_name;
+    public String getAccountName(){
+        return accountName;
     }
 
     public String getIban(){
