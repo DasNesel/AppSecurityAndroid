@@ -17,9 +17,9 @@ import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
-
+import android.content.Context;
 public class MainActivity extends AppCompatActivity {
-
+    private static Context sContext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,5 +57,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    public static Context getContext() {
+        return sContext;
     }
 }

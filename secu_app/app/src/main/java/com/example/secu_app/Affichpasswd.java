@@ -7,7 +7,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
-
+import com.example.secu_app.PreferenceUtils;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -28,9 +28,9 @@ public class Affichpasswd extends AppCompatActivity implements View.OnClickListe
 
 
         final String login= PreferenceUtils.getLogin();
-        if(!TextUtils.isEmpty(login)){
-            startActivity(getHomeIntent(login));
-        }
+        //if(!TextUtils.isEmpty(login)){
+            //startActivity(getHomeIntent(login));
+        //}
     }
 
     @Override
@@ -47,9 +47,16 @@ public class Affichpasswd extends AppCompatActivity implements View.OnClickListe
 
         login=(String) mLoginEditText.getText().toString();
         PreferenceUtils.setLogin(login);
-        startActivity(getHomeIntent(login));
+        //startActivity(getHomeIntent(login));
     }
-
+    /*private Intent getHomeIntent(String userName){
+        Intent intent=new Intent(this, com.example.secu_app.class);
+        final Bundle extras= new Bundle();
+        extras.putString(Constants.Login.EXTRA_LOGIN, userName);
+        intent.putExtras(extras);
+        return intent;
+    }
+    */
     public static void main(String[] args)throws Exception
     {
         //place where file is located. double backward slash should be used.
